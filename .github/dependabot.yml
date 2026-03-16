@@ -1,0 +1,8 @@
+version: 2
+updates:
+  # Maintain pip dependencies for security
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly" # Check for vulnerable or outdated packages once a week
+    open-pull-requests-limit: 10
